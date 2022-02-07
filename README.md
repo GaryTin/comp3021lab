@@ -1,2 +1,2 @@
 # comp3021lab
-COMP3021Lab
+TIN, Kwai Ki 20692299
