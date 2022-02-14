@@ -46,17 +46,13 @@ public class NoteBook {
 		for (Note n:f.getNotes())
 		{
 			
-			System.out.println("Going to create(note) [" + note.getTitle()+ "]. The (n) title[" + n.getTitle()+ "] is in the folder [" + f.getName() + "].");
-			System.out.println("\tResult of n.equals(note)¡G " + n.equals(note));
 			if (n.equals(note))
 			{
-				System.out.println("Creating note [" + note.getTitle() + "] under folder [" + folderName + "] failed");
-				System.out.println("==========================================================");
+				System.out.println("Creating note " + note.getTitle() + " under folder " + folderName + " failed");
 				return false;
 			}
 		}
 		f.addNote(note);
-		System.out.println("==========================================================");
 		return true;
 	}
 	

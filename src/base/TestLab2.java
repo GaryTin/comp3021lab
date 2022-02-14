@@ -11,15 +11,8 @@ public class TestLab2 {
 			boolean b;
 			int numSucceed = 0;
 			
-			b = nb.createImageNote("study", "Photography");
-			b = nb.createTextNote("study", "Photography");
-			for(Folder f : nb.getFolders())
-			{
-				System.out.println(f.toString());
-			}
 			
-			
-			/*
+
 			b = nb.createTextNote("life", "lunch");
 			if (b) numSucceed++;
 			b = nb.createImageNote("life", "selfie");
@@ -53,7 +46,6 @@ public class TestLab2 {
 			{
 				System.out.println(f.toString());
 			}
-			*/
 			
 			
 		}
