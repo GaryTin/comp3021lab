@@ -8,6 +8,7 @@ import java.io.Serializable;
 public class Folder implements Comparable<Folder>,Serializable{
 	private ArrayList<Note> notes;
 	private String name;
+	private static final long serialVersionUID = 1L;
 
 	public Folder(String name) {
 	
@@ -149,4 +150,23 @@ public class Folder implements Comparable<Folder>,Serializable{
 		return result;
 		
 	}
+	public boolean removeNotes(String title)
+	{
+		   // TODO
+		   // Given the title of the note, delete it from the folder.
+		   // Return true if it is deleted successfully, otherwise return false. 
+		int index = 0;
+		for (Note note:notes)
+		{
+			if (note.getTitle().equals(title))
+			{
+				notes.remove(index);
+				return true;
+			}
+			index++;
+		}
+		return false;
+	}
+
+	
 }

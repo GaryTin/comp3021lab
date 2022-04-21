@@ -7,6 +7,7 @@ public class Note implements Comparable<Note>,Serializable{
 	
 	private Date date;
 	private String title;
+	private static final long serialVersionUID = 1L;
 	
 	public Note(String title)
 	{
@@ -56,6 +57,10 @@ public class Note implements Comparable<Note>,Serializable{
 	public String getContent()
 	{
 		return null;
+	}
+	public void setContent(String c)
+	{
+		
 	}
 
 

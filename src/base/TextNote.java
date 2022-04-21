@@ -14,6 +14,7 @@ import java.io.FileWriter;
 public class TextNote extends Note {
 
 	private String content;
+	private static final long serialVersionUID = 1L;
 	
 	public TextNote(String title,String content)
 	{
@@ -25,6 +26,12 @@ public class TextNote extends Note {
 	public String getContent()
 	{
 		return content;
+	}
+	
+	@Override
+	public void setContent(String c)
+	{
+		content = c;
 	}
 	
 	public TextNote(File f) {

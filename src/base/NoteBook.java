@@ -19,6 +19,7 @@ public class NoteBook implements Serializable {
 	{
 		folders = new ArrayList<Folder>();
 	}
+	
 	public NoteBook(String file)
 	{	
 		FileInputStream fis = null;
@@ -120,6 +121,10 @@ public class NoteBook implements Serializable {
 		    return false;    
 		}
 		return true;
+	}
+	
+	public void addFolder(String folderName) {
+		folders.add(new Folder(folderName)); 
 	}
 
 	
